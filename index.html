@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Medical Database Login</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width-device-width, initial-src"/>
+		<link rel="stylesheet" type="text/css" href="main.css"/>
+		<link rel="stylesheet" type="text/css" href="font-awesome.css"/>
+	</head>
+
+	<body>
+
+		<header>
+
+			<h1> Medical Database </h1>
+
+		</header>
+
+		<div class="container">
+			<img src="man.png"/>
+			<form>
+				<div class="form-input">
+					<input type="password" id="passwordPublic" name="password" placeholder="Enter Public Key (Doctor)">
+				</div>
+				<input type="button" value="LOGIN" class="btn-login" onclick= "if (document.getElementById('passwordPublic').value == 'a') location.href='newExist.html'; else alert('Please enter the correct password!');" />
+			</form> 
+			<br>
+				<a href="#">Forgot password? </a>
+			</br>
+		</div>
+		<footer>
+			<p> Created by Traian Svinti and David Talan</p>
+		</footer>
+	</body>
+
+</html> 
