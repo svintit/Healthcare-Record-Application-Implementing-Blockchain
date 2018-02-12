@@ -20,7 +20,6 @@ digital_asset_payload = {
             'name': 'bob',
             'address': 'cork, ireland',
             'illness': 'cancer'
-
         }
     },
 }
