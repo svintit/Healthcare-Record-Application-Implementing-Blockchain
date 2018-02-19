@@ -58,6 +58,18 @@ body {
     margin-bottom: 30px;
 }
 
+.existingContainer{
+   width: 1000px;
+   height: 200px;
+   text-align: center;
+   color: white;
+   background-color: rgba(52,73,94,0.7);
+   border-radius: 15px;
+   margin: 0 auto;
+   font-family: sans-serif;
+   margin-top: 50px;
+}
+
 
 input[type="text"], input[name="password"] {
 
