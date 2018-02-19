@@ -19,7 +19,9 @@
 			<img src="man.png"/>
 			<form>
 				<div class="form-input">
-					<input type="password" id="passwordPublic" name="password" placeholder="Enter Public Key (Doctor)">
+					<input type="username" id="passwordPublic" name="username" placeholder="Username" >
+					<br>
+					<input type="password" id="passwordPublic" name="username" placeholder="Password">
 				</div>
 				<input type="button" value="LOGIN" class="btn-login" onclick= "if (document.getElementById('passwordPublic').value == 'a') location.href='newExist.html'; else alert('Please enter the correct password!');" />
 			</form>
