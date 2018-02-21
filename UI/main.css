@@ -25,9 +25,12 @@ body {
     border-radius: 15px;
     margin: 0 auto;
     margin-top: 150px;
-    z-index: 0;
-}
 
+}
+.z-depth-3 {
+    -webkit-box-shadow: 0 11px 7px 0 rgba(0,0,0,0.19),0 13px 25px 0 rgba(0,0,0,0.3);
+    box-shadow: 0 11px 7px 0 rgba(0,0,0,0.19),0 13px 25px 0 rgba(0,0,0,0.3);
+}
 .infoContainer {
     width: 700px;
     height: 200px;
@@ -71,21 +74,21 @@ body {
 }
 
 
-input[type="text"], input[name="password"] {
-
+input[type="password"]/*, input[name="passwordLogIn"]*/ {
     height: 30px;
     width: 220px;
     border-radius: 10px;
     font-size: 18px;
     margin-bottom: 20px;
     background-color: #fff;
-    padding-left: 20px;
+
+    text-align: center;
 
 }
 
-input[type="text"], input[name="username"] {
-    height: 35px;
-    width: 200px;
+input[type="username"]/*, input[name="userLogIn"]*/ {
+    height: 30px;
+    width: 220px;
     border-radius: 10px;
     font-size: 18px;
     margin-bottom: 20px;
@@ -114,6 +117,7 @@ form-input:before {
     font-size: 35px;
 }
 
+
 form-patient{
    float:left
    position: relative;
@@ -123,7 +127,12 @@ form-patient{
    padding-top: 5px;
    font-size: 35px;
 }
+log-in-form{
 
+}
+.login{
+   font-family: "FontAwesome.css";
+}
 
 .btn-login {
     padding: 15px 25px;
@@ -192,10 +201,11 @@ h1 {
 
 }
 
-footer {
+.footer {
     width: 500px;
     text-align: center;
     margin: 10px auto;
+    border-radius: 15px;
 }
 
 .modal {
