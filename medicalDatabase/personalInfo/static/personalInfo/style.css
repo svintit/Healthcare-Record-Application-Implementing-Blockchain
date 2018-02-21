@@ -1,0 +1,9 @@
+body {
+   background-image: url("images/bg.jpg");
+    margin: 0;
+    height: 100%;
+}
+
+a {
+	font-family: ariel;
+}

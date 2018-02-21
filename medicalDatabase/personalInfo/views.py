@@ -1,12 +1,11 @@
-from django.http import HttpResponse
-from django.template import loader
+from django.shortcuts import render, get_object_or_404
 from .models import GeneralInfo
 
 def index(request): 
 	all_generalInfo = GeneralInfo.objects.all()
-	template = loader.get_template('')
-	return HttpResponse(html)
+	return render(request, 'personalInfo/personalInfo.html', { 'all_generalInfo': all_generalInfo })
 
 def detail(request, generalInfo_id):
-	return HttpResponse("<h2>Details for user id: " + str(generalInfo_id) + "</h2>")
+	generalInfo = get_object_or_404(GeneralInfo, pk=generalInfo_id)
+	return render(request, 'personalInfo/details.html', { 'generalInfo': generalInfo, })
 

@@ -15,10 +15,4 @@ class GeneralInfo(models.Model):
 	personalPic = models.CharField(max_length = 1000)
 
 	def __str__(self):
-		return self.fullName + ' - ' + self.fullName
-
-class HealthInfo(models.Model):
-	generalInfo = models.ForeignKey(GeneralInfo, on_delete = models.CASCADE)
-	conditions = models.CharField(max_length = 250)
-	smoker = models.CharField(max_length = 250)
-	activityLevel = models.CharField(max_length = 250)
+		return self.fullName + ' - ' + self.dob
