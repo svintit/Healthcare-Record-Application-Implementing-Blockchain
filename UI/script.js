@@ -30,3 +30,40 @@ var app = angular.module('myApp', []);
 app.controller('myCtrl', function($scope) {
     $scope.name = "John Doe";
 });
+
+/*function loginRedirect(){
+   var done = 0;
+   var username = document.getElementById("userLogIn").value;
+   var password = document.getElementByI("passwordLogIn").value;
+   if(username == "doctor" && password == "a"){ window.location.replace("newExist.html");}
+   else {alert("Login Invalid - Try again.");}
+   return false;
+}*/
+
+
+/*
+function validateForm() {
+        var un = document.loginform.usr.value;
+        var pw = document.loginform.pword.value;
+        var name = "username";
+        var word = "password";
+        if ((un == "doctor") && (pw == "a")) {
+            window.location("newExist.html");
+        }
+        else {
+            alert ("Login was unsuccessful, please check your username and password");
+
+        }
+  }*/
+  function check(form)
+  {
+
+   if(form.userid.value == "doctor" && form.pswrd.value == "a")
+    {
+      window.open('file:///home/david/3rdYearProject/UI/newExist.html')
+    }
+   else
+   {
+     alert("Please subscribe to my channel for more coding!")
+    }
+  }
