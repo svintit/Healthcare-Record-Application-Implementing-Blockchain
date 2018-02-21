@@ -1,0 +1,24 @@
+<!-- Loads path to static files -->
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="{% static 'personalInfo/style.css' %}">
+	</head>
+
+	<body>
+		{% if all_generalInfo %}
+			<h3>Here are all the patients: </h3>
+			<div>
+				<ul>
+					{% for generalInfo in all_generalInfo %}
+						<li><a href="{% url 'personalInfo:detail' generalInfo.id %}">{{ generalInfo.fullName}} | {{ generalInfo.ppsn }}</a></li>
+					{% endfor %}
+				</ul>
+			</div>
+		{% else %}
+			<h3>You don't have any information.</h3>
+		{% endif %}
+	</body>
+</html>

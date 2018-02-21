@@ -1,0 +1,29 @@
+<!-- Loads path to static files -->
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="{% static 'personalInfo/style.css' %}">
+	</head>
+
+	<body>
+		<div>
+			<img src="{{ GeneralInfo.personalPic }}"> <br>
+			Name: {{ generalInfo.fullName }} <br> 
+			Address: {{ generalInfo.address }} <br>
+			Gender: {{ generalInfo.gender }} <br>
+			Date of Birth: {{ generalInfo.dob }} <br>
+			Home Phone Number: {{ generalInfo.homePhone }} <br>
+			Personal Phone Number: {{ generalInfo.personalPhone }} <br>
+			Emergency Contact: {{ generalInfo.emergencyContact }} <br>
+			Email Address: {{ generalInfo.email }} <br>
+			PPSN: {{ generalInfo.ppsn }} <br>
+			marital Status: {{ generalInfo.maritalStatus }} <br>
+			Employment Status: {{ generalInfo.employment }} <br>
+		</div>
+		{% if error_message %}
+			<p> <strong> {{ error_message }} </strong> </p>
+		{% endif %}
+	</body>
+</html>
