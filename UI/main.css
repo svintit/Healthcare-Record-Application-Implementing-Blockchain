@@ -123,7 +123,7 @@ input[type="text"], input[name="formIn"] {
     padding-left: 20px;
 }
 
-form-input:before {
+forminput{
     background: url(man.png);
     content: "\f007";
     position: absolute;

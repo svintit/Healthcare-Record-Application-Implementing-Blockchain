@@ -17,14 +17,14 @@
 
 		<div class="container z-depth-3">
 			<img src="man.png"/>
-			<form>
-				<div class="form-input">
-					<input type="username" id="userIn" name="username" placeholder="Username" >
-					<br>
-					<input type="password" id="passwordPublic" name="username" placeholder="Password">
-				</div>
 
-				<input type="button" value="LOGIN" class="btn-login" onclick= "if (document.getElementById('passwordPublic').value == 'a' && (document.getElementById('userIn').value == 'doctor')) location.href='newExist.html';
+			<form onsubmit="return logIn()" method="get" action="newExist.html">
+					<input type="username" id="userIn" placeholder="Username" >
+<br>
+					<input type="password" id="passwordDoctor"  placeholder="Password">
+
+<br>
+				<input type="submit" value="LOGIN" class="btn-login" onclick= "if (document.getElementById('passwordPublic').value == 'a' && (document.getElementById('userIn').value == 'doctor')) location.href='newExist.html';
 
 				else alert ('Please enter the correct Username!');" />
 			</form>
@@ -35,6 +35,8 @@
 		<div class ="footer  z-depth-3">
 			<p> Created by Traian Svinti and David Talan</p>
 		</footer>
+		<script src="script.js"></script>
 	</body>
+
 
 </html>

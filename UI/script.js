@@ -31,6 +31,17 @@ app.controller('myCtrl', function($scope) {
     $scope.name = "John Doe";
 });
 
+function logIn(){
+   var usr = document.getElementById("userIn").value;
+   var pass = document.getElementById("passwordDoctor").value;
+   if (usr == "doctor" && pass == "a"){
+      return true;
+   }
+   else{
+      alert("Login Invalid - Try again.");
+   }
+   return false;
+}
 /*function loginRedirect(){
    var done = 0;
    var username = document.getElementById("userLogIn").value;
