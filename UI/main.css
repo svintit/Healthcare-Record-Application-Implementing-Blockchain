@@ -1,4 +1,22 @@
 
+/*@media (min-width: 400px) {
+    body {
+        background-image:url("bg.jpg");
+    }
+}
+
+@media (min-width: 500px) {
+    body {
+        background-image:url("bg.jpg");
+    }
+}
+
+@media (min-width: 600px) {
+    body {
+        background-image:url("bg.jpg");
+    }
+}*/
+
 
 body {
    background-image: url("bg.jpg");
@@ -197,7 +215,8 @@ h1 {
     margin: 0 auto;
     margin-bottom: -30px;
     margin-top: 10px;
-
+    -webkit-box-shadow: 0 11px 7px 0 rgba(0,0,0,0.19),0 13px 25px 0 rgba(0,0,0,0.3);
+  box-shadow: 0 11px 7px 0 rgba(0,0,0,0.19),0 13px 25px 0 rgba(0,0,0,0.3);
 
 }
 
