@@ -23,21 +23,16 @@
 				<button onclick = "location.href = 'newpatient.html';" class="pickbtn"> New Patient</button>
 			</div>
 
-
-
 				<div id="myModalExist" class="modal">
 					<div class="modal-content">
 						<span class="closeExist">&times;</span>
 							<div class="formContainerLeft">
-								<form>
-									<div class="form-input">
+								<form onsubmit="return patientLogIn();" method="get" action="existingPatient.html">
 										<h3>Please enter Username</h3>
-										<input type="username" id="Username" name="username" placeholder="Username (Patient)">
-									</div>
-									<div class="form-input">
-										<input type ="password" id="Password" name ="password" placeholder="Enter Password">
-									</div>
-									<input type="button" value="SUBMIT" class="btn-login" onclick= "location.href='existingPatient.html';" />
+										<input type="username" id="patientUser" name="username" placeholder="Username (Patient)" required>
+										<input type ="password" id="patientPswd" name ="password" placeholder="Enter Password" required>
+									<br>
+									<input type="submit" value="SUBMIT" class="btn-login"/>
 								</form>
 							</div>
 					</div>
@@ -74,10 +69,7 @@
 				</div> -->
 
 
-		<div class ="footer z-depth-3">
-			<p> Created by Traian Svinti and David Talan</p>
-		</footer>
-
+		
 
 	<script src="script.js"></script>
 

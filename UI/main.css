@@ -60,6 +60,24 @@ body {
     font-family: sans-serif;
     margin-top: 50px;
 }
+.patientDetailsContainer img{
+   width: 135px;
+   height:230px;
+   margin-top:15px;
+   margin-left: -625px;
+   border:4px solid #021a40
+}
+.patientDetailsContainer{
+   width: 800px;
+   height: 60%;
+   text-align: center;
+   color: white;
+   background-color: rgba(52,73,94,0.7);
+   border-radius: 15px;
+   margin: 0 auto;
+   font-family: sans-serif;
+   margin-top: 15px;
+}
 .newPatientContainer {
     width: 40%;
     height: 60%;
@@ -91,6 +109,37 @@ body {
    margin-top: 50px;
 }
 
+.tab{
+   margin:0 auto;
+   font-family: sans-serif;
+   width: 800px;
+   overflow: hidden;
+   border-radius: 15px;
+   background-color:rgba(52,73,94,0.7);
+   margin-top: 50px;
+}
+.tab button{
+   background-color: inherit;
+   color: white;
+   float: left;
+   border: none;
+   outline: none;
+   cursor: pointer;
+   padding: 14px 16px;
+   transition: 0.3s;
+}
+.tab button:hover {
+    background-color: #5D7A97;
+}
+.tab button.active {
+    background-color: #1F4368;
+}
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
 
 input[type="password"]/*, input[name="passwordLogIn"]*/ {
     height: 30px;
@@ -145,9 +194,7 @@ form-patient{
    padding-top: 5px;
    font-size: 35px;
 }
-log-in-form{
 
-}
 .login{
    font-family: "FontAwesome.css";
 }
@@ -269,7 +316,7 @@ h1 {
 /* The Close Button */
 .closeExist {
     color: red;
-    float: right;
+    position: right;
     font-size: 28px;
     font-weight: bold;
 }

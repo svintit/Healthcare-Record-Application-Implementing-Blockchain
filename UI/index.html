@@ -18,15 +18,13 @@
 		<div class="container z-depth-3">
 			<img src="man.png"/>
 
-			<form onsubmit="return logIn()" method="get" action="newExist.html">
-					<input type="username" id="userIn" placeholder="Username" >
+			<form onsubmit="return doctorLogIn()" method="get" action="newExist.html">
+					<input type="username" id="userIn" placeholder="Username" required>
 <br>
-					<input type="password" id="passwordDoctor"  placeholder="Password">
+					<input type="password" id="passwordDoctor"  placeholder="Password" required>
 
 <br>
-				<input type="submit" value="LOGIN" class="btn-login" onclick= "if (document.getElementById('passwordPublic').value == 'a' && (document.getElementById('userIn').value == 'doctor')) location.href='newExist.html';
-
-				else alert ('Please enter the correct Username!');" />
+				<input type="submit" value="LOGIN" class="btn-login" />
 			</form>
 			<br>
 				<a href="#">Forgot password? </a>

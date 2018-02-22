@@ -31,7 +31,7 @@ app.controller('myCtrl', function($scope) {
     $scope.name = "John Doe";
 });
 
-function logIn(){
+function doctorLogIn(){
    var usr = document.getElementById("userIn").value;
    var pass = document.getElementById("passwordDoctor").value;
    if (usr == "doctor" && pass == "a"){
@@ -42,39 +42,31 @@ function logIn(){
    }
    return false;
 }
-/*function loginRedirect(){
-   var done = 0;
-   var username = document.getElementById("userLogIn").value;
-   var password = document.getElementByI("passwordLogIn").value;
-   if(username == "doctor" && password == "a"){ window.location.replace("newExist.html");}
-   else {alert("Login Invalid - Try again.");}
+
+function patientLogIn(){
+   var patient = document.getElementById("patientUser").value;
+   var patientPass = document.getElementById("patientPswd").value;
+   if (patient == "patient" && patientPass =="a"){
+      return true
+   }
+   else{
+      alert("Login Invalid - Try again");
+   }
    return false;
-}*/
+}
 
+//Tab functions
+function openRecord(opt, Name){
+   var i, tabcontent, tablinks;
 
-/*
-function validateForm() {
-        var un = document.loginform.usr.value;
-        var pw = document.loginform.pword.value;
-        var name = "username";
-        var word = "password";
-        if ((un == "doctor") && (pw == "a")) {
-            window.location("newExist.html");
-        }
-        else {
-            alert ("Login was unsuccessful, please check your username and password");
-
-        }
-  }*/
-  function check(form)
-  {
-
-   if(form.userid.value == "doctor" && form.pswrd.value == "a")
-    {
-      window.open('file:///home/david/3rdYearProject/UI/newExist.html')
+   tabcontent = document.getElementsByClassName("tabcontent");
+   for(i = 0; i < tabcontent.length; i++){
+      tabcontent[i].style.display ="none";
+   }
+   tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
     }
-   else
-   {
-     alert("Please subscribe to my channel for more coding!")
-    }
-  }
+   document.getElementById(name).style.display = "block";
+   opt.currentTarget.className += " active";
+}
