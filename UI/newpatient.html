@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
    <head>
-
-      <meta charset="utf-8">
       <title>New Patient</title>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+      <meta charset="utf-8">
       <meta name="viewport" content="width-device-width, initial-src"/>
 		<link rel="stylesheet" type="text/css" href="main.css"/>
 		<link rel="stylesheet" type="text/css" href="font-awesome.css"/>
@@ -13,57 +13,76 @@
          <h1>New Patient</h1>
       </header>
 
+      <div class="newPatientContainer">
 
-         <div class="form-group row">
-  <label for="full-name" class="col-2   col-form-label">Full Name</label>
-  <div class="col-10">
-    <input class="form-control" type="text" id="patient-name">
-  </div>
+<form action="medicalInfo.html">
+   <div class="form-group ">
+  <label for="full-name " >Full Name</label>
+    <input class="form-control  center_div" type="text" id="patient-name" required>
+</div>
 
-  <label for="address" class="col-2 col-form-label">Address</label>
-  <div class="col-10">
-    <input class="form-control" type="text" id="patient-address">
-  </div>
+<div class="form-group ">
+  <label for="address" class="col col-form-label">Address</label>
+    <input class="form-control center_div" type="text" id="patient-address" required>
+</div>
 
+<div class="form-group">
   <label for="gender" class="col-2 col-form-label">Gender</label>
-  <div class="col-10">
-    <input class="form-control" type="text" id="patient-gender">
-  </div>
 
+    <input class="form-control  center_div" type="text" id="patient-gender" required>
+
+</div>
+
+<div class="form-group ">
   <label for="dob" class="col-2 col-form-label">Date of Birth</label>
-  <div class="col-10">
-    <input class="form-control" type="text" id="patient-dob">
-  </div>
 
+    <input class="form-control center_div" type="text" id="patient-dob" required>
+
+</div>
+
+<div class="form-group ">
   <label for="phone-num" class="col-2 col-form-label">Phone Number</label>
-  <div class="col-10">
-    <input class="form-control" type="text" id="patient-phone">
-  </div>
 
+    <input class="form-control center_div" type="text" id="patient-phone" required>
+
+</div>
+
+<div class="form-group ">
   <label for="email" class="col-2 col-form-label">E-mail Address</label>
-  <div class="col-10">
-    <input class="form-control" type="text" id="patient-email">
-  </div>
 
+    <input class="form-control center_div" type="text" id="patient-email" required>
+
+</div>
+
+<div class="form-group ">
   <label for="ppsn" class="col-2 col-form-label">PPS Number</label>
-  <div class="col-10">
-    <input class="form-control" type="text" id="patient-ppsn">
-  </div>
 
+    <input class="form-control center_div" type="text" id="patient-ppsn" required>
+
+</div>
+
+<div class="form-group ">
   <label for="marital" class="col-2 col-form-label">Marital Status</label>
-  <div class="col-10">
-    <input class="form-control" type="text" id="patient-marital">
-  </div>
 
+    <input class="form-control center_div" type="text" id="patient-marital" required>
+
+</div>
+
+<div class="form-group ">
   <label for="contact" class="col-2 col-form-label">Emergency Contact</label>
-  <div class="col-10">
-    <input class="form-control" type="text" id="patient-contact">
-  </div>
 
+    <input class="form-control center_div" type="text" id="patient-contact" required>
+
+</div>
+
+<div class="form-group ">
   <label for="employment" class="col-2 col-form-label">Employment</label>
-  <div class="col-10">
-    <input class="form-control" type="text" id="patient-employ">
-  </div>
+
+    <input class="form-control center_div" type="text" id="patient-employ" required>
+
+</div>
+  <input type="submit" value="NEXT" class="btn-login">
+</form>
 </div>
 
 
