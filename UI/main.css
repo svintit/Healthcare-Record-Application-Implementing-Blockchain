@@ -81,15 +81,24 @@ body {
 .newPatientContainer {
     width: 40%;
     height: 60%;
-    text-align: center;
     color: white;
     background-color: rgba(52,73,94,0.7);
+    text-align: center;
     border-radius: 15px;
     margin: 0 auto;
     font-family: sans-serif;
     margin-top: 50px;
 }
+.center_div{
+   margin: 0 auto;
+   width:80%
+}
 
+
+.form_left{
+   margin-left: 50px;
+   text-align: left;
+}
 .container img {
     width: 200px;
     height: 200px;
