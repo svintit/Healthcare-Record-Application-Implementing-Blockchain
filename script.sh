@@ -5,4 +5,4 @@
 # Not sure if we need the mongodb one that is run by below.
 
 cd /home/svintit/3rdYearProject/medicalDatabase
-python3 manage.py runserver
+python3.6 manage.py runserver

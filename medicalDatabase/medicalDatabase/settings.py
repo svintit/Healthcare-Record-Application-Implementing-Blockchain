@@ -31,6 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+	'djangotoolbox',
     'personalInfo.apps.PersonalInfoConfig',
     'django.contrib.admin',
     'django.contrib.auth',
@@ -75,10 +76,10 @@ WSGI_APPLICATION = 'medicalDatabase.wsgi.application'
 # https://docs.djangoproject.com/en/2.0/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django_mongodb_engine',
-        'NAME': 'my_database',
-    }
+	'default': {
+		'ENGINE': 'djongo',
+		'NAME': 'my_database',
+	}
 }
 
 

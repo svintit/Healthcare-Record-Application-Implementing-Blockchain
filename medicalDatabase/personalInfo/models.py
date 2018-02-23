@@ -1,4 +1,5 @@
-from django.db import models
+from djongo import models
+from djongo.models import forms
 
 class GeneralInfo(models.Model):
 	fullName = models.CharField(max_length = 250)
