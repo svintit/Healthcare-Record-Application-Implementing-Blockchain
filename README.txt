@@ -17,3 +17,5 @@
 - Django			- sudo python3.6 -m pip install django
 
 - Djongo			- sudo python3.6 -m pip install djongo
+
+- DjangoToolbox		- sudo python3.6 -m pip install git+https://github.com/django-nonrel/djangotoolbox
