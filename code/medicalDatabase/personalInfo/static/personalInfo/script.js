@@ -31,18 +31,6 @@ app.controller('myCtrl', function($scope) {
     $scope.name = "John Doe";
 });
 
-function doctorLogIn(){
-   var usr = document.getElementById("userIn").value;
-   var pass = document.getElementById("passwordDoctor").value;
-   if (usr == "doctor" && pass == "a"){
-      return true;
-   }
-   else{
-      alert("Login Invalid - Try again.");
-   }
-   return false;
-}
-
 function patientLogIn(){
    var patient = document.getElementById("patientUser").value;
    var patientPass = document.getElementById("patientPswd").value;
@@ -56,12 +44,12 @@ function patientLogIn(){
 }
 
 //Tab functions
-function openRecord(opt, Name){
+function openRecord(opt, name){
    var i, tabcontent, tablinks;
 
    tabcontent = document.getElementsByClassName("tabcontent");
    for(i = 0; i < tabcontent.length; i++){
-      tabcontent[i].style.display ="none";
+      tabcontent[i].style.display = "none";
    }
    tablinks = document.getElementsByClassName("tablinks");
     for (i = 0; i < tablinks.length; i++) {

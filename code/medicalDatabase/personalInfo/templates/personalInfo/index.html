@@ -1,0 +1,40 @@
+<!-- Loads path to static files -->
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<title>Medical Database Login</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width-device-width, initial-src"/>
+		<link rel="stylesheet" href="{% static 'personalInfo/main.css' %}">
+		<link rel="stylesheet" href="{% static 'personalInfo/font-awesome.css' %}">
+
+	</head>
+
+	<body>
+
+		<header>
+
+			<h1> Medical Database Login</h1>
+
+		</header>
+
+			<div class="infoContainer z-depth-3">
+				<button onclick = "location.href = 'login.html';" class = "pickbtn"> Existing Patient </button>
+
+				<button onclick = "location.href = 'http://127.0.0.1:8000/admin';" class="pickbtn"> New Patient</button>
+			</div>
+
+	<footer>
+		<div class ="footer  z-depth-3">
+			<p> Created by Traian Svinti and David Talan</p>
+		</div>
+	</footer>
+
+	<script src="script.js"></script>
+
+	</body>
+
+</html>

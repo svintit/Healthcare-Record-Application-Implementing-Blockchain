@@ -1,3 +1,6 @@
+<!-- Loads path to static files -->
+{% load staticfiles %}
+
 <!DOCTYPE html>
 <html>
 	<head>
@@ -5,8 +8,8 @@
 		<link rel="stylesheet" type="text/css" href="main.css"/>
 		<title>Medical Database Login</title>
 		<meta charset="UTF-8">
-		<meta name="viewport" content="width-device-width, initial-src"/>
-		<link rel="stylesheet" type="text/css" href="font-awesome.css"/>
+		<link rel="stylesheet" href="{% static 'personalInfo/main.css' %}">
+		<link rel="stylesheet" href="{% static 'personalInfo/font-awesome.css' %}">
 	</head>
 
 	<body>
@@ -16,23 +19,34 @@
 		</header>
 
 		<div class="container z-depth-3">
-			<img src="man.png"/>
+			<img src="../../static/personalInfo/man.png"/>
 
-			<form onsubmit="return doctorLogIn()" method="get" action="newExist.html">
+			<form method="post">
+				{% csrf_token %}
+				<div>
 					<input type="username" id="userIn" placeholder="Username" required>
-<br>
+					{{ form.username.label_tag }}
+					{{ form.username }}
+				</div>
+<br>			<div>
 					<input type="password" id="passwordDoctor"  placeholder="Password" required>
+					{{ form.password.label_tag }}
+					{{ form.password }}
 
-<br>
+<br>			</div>
 				<input type="submit" value="LOGIN" class="btn-login" />
 			</form>
 			<br>
 				<a href="#">Forgot password? </a>
 			</br>
 		</div>
+
+		<footer>
 		<div class ="footer  z-depth-3">
 			<p> Created by Traian Svinti and David Talan</p>
+		</div>
 		</footer>
+
 		<script src="script.js"></script>
 	</body>
 
