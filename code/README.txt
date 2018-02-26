@@ -18,4 +18,8 @@
 
 - Djongo			- sudo python3.6 -m pip install djongo
 
+<<<<<<< HEAD:README.txt
 - Djongo toolbox -
+=======
+- DjangoToolbox		- sudo python3.6 -m pip install git+https://github.com/django-nonrel/djangotoolbox
+>>>>>>> 6dd72a249c07fbc675622e61dfb864b558157bb9:code/README.txt

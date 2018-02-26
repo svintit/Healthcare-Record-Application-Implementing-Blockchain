@@ -17,9 +17,8 @@ user_pub_key = 'A2uZHQkG32SSR6Ssh31sbMLnTAkWk93EmKnJHiqJVogM'
 digital_asset_payload = {
     'data': {
         'record': {
-            'name': 'bob',
-            'address': 'cork, ireland',
-            'illness': 'cancer'
+            'test':'hello djongo',
+            'is it working':'maybe'
         }
     },
 }
