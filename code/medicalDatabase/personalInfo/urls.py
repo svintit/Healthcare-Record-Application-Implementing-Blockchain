@@ -13,4 +13,8 @@ urlpatterns = [
 
 	# /personalInfo/ID71
 	url(r'^(?P<generalInfo_id>[0-9]+)/$', views.detail, name='detail'),
+
+	url(r'^details/$', views.patientDetails, name='patientDetails'),
+
+
 ]

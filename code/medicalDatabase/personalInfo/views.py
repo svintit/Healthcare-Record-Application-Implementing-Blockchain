@@ -1,9 +1,7 @@
 from django.shortcuts import render, get_object_or_404
 from .models import GeneralInfo
+from django.contrib.auth.decorators import login_required
 
-def choose(request): 
-	all_generalInfo = GeneralInfo.objects.all()
-	return render(request, 'personalInfo/personalInfo.html', { 'all_generalInfo': all_generalInfo })
 
 def detail(request, generalInfo_id):
 	generalInfo = get_object_or_404(GeneralInfo, pk=generalInfo_id)
@@ -14,3 +12,8 @@ def index(request):
 
 def patientLogin(request):
 	return render(request, 'accounts/login.html', {})
+
+@login_required(login_url="http://127.0.0.1:8000/accounts/login/")
+def patientDetails(request):
+	return render(request, 'personalInfo/details.html', {})
+
