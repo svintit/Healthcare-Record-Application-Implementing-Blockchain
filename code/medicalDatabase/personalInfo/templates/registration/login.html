@@ -23,14 +23,13 @@
 
 			<form method="post">
 				{% csrf_token %}
-
 				<div>
 					
 					{{ form.username.label_tag }}
 					{{ form.username }}
 				</div>
 <br>			<div>
-					<input type="password" id="passwordDoctor"  placeholder="Password" required>
+					
 					{{ form.password.label_tag }}
 					{{ form.password }}
 
