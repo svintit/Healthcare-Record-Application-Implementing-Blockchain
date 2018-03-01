@@ -5,7 +5,4 @@ from sys import exit
 import time
 from doctor import Doctor
 from patient import Patient
-
-
-
-print(doctorPriv)
+    
