@@ -19,7 +19,10 @@
 	<body>
 		<header>
 			<h1> {{ generalInfo.fullName }}'s Profile </h1>
+			<div>
+			<button onclick = "location.href = 'http://127.0.0.1:8000/accounts/logout/';" class = "logoutbtn z-depth-3"> Logout </button>
 		</header>
+		<br>
 
 		<div class="tab z-depth-3">
 		  <button class="tablinks" onclick="openRecord(rec, 'GeneralInfo')">General Information</button>

@@ -21,20 +21,13 @@
 		<div class="container z-depth-3">
 			<img src="../../static/personalInfo/man.png"/>
 
-			<form method="post">
+			<form role="form" method="post" action=""{% url 'login' %}?next={{request.path}}">
 				{% csrf_token %}
-				<div>
-					
-					{{ form.username.label_tag }}
-					{{ form.username }}
-				</div>
-<br>			<div>
-					
-					{{ form.password.label_tag }}
-					{{ form.password }}
-
-<br>			</div>
-				<input type="submit" value="LOGIN" class="btn-login" />
+				<input type="text" name="username" placeholder="Username" id="{{ field.id_for_label }}" value="{{ field.value }}">
+				<br>
+				<input type="password" name="password" placeholder="Password" id="{{ field.id_for_label }}" value="{{ field.value }}">	
+				<br>
+				<input type="submit" value="Login" class="btn-login" />
 			</form>
 			<br>
 				<a href="#">Forgot password? </a>
