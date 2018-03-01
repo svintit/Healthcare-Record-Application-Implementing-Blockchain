@@ -68,11 +68,11 @@ body {
 
 /* Style the tab */
 .tab {
-    margin-top: 50px;
+    margin-top: 30px;
     overflow: hidden;
     background-color: #2ECC71;
-    color: #fff;
     border-radius: 20px;
+    border-bottom: 4px solid #27AE60;
 }
 
 /* Style the buttons that are used to open the tab content */
@@ -82,8 +82,10 @@ body {
     border: none;
     outline: none;
     cursor: pointer;
-    padding: 14px 16px;
+    padding: 2px 62px;
     transition: 0.3s;
+    color: #fff;
+    font-size: 20px;
 }
 
 /* Change background color of buttons on hover */
@@ -177,6 +179,7 @@ input[type=password] {
 .logoutbtn {
     font-size: 20px;
     margin-right: 20px;
+    margin-top: -18px;
     float: right;
     height: 50px;
     width: 100px;
@@ -198,11 +201,7 @@ a {
     text-decoration: none;
     color: white;
     font-family: sans-serif;
-}
-
-a:hover {
-    color: coral;
-    font-weight: bold;
+    position: center;
 }
 
 p {

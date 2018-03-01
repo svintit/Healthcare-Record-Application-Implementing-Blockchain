@@ -1,7 +1,7 @@
 from django.contrib import admin
 from .models import UserProfile
 
-class UserProfileAdmin(admin.ModelAdmin):
+class UserProfileForm(admin.ModelAdmin):
 	list_display = [
 		'user',
 		'fullName', 
@@ -18,4 +18,4 @@ class UserProfileAdmin(admin.ModelAdmin):
 		'personalPic'
 	]
 
-admin.site.register(UserProfile, UserProfileAdmin)
+admin.site.register(UserProfile, UserProfileForm)

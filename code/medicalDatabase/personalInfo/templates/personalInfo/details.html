@@ -13,12 +13,11 @@
 		<meta name="viewport" content="width-device-width, initial-src"/>
 
 		<link rel="stylesheet" href="{% static 'personalInfo/main.css' %}">
-		<link rel="stylesheet" href="{% static 'personalInfo/font-awesome.css' %}">
 
-	</head>
+	</head> 
 	<body>
 		<header>
-			<h1> {{ generalInfo.fullName }}'s Profile </h1>
+			<h1> {{ userprofile.fullName }}'s Profile </h1>
 			<div>
 			<button onclick = "location.href = 'http://127.0.0.1:8000/accounts/logout/';" class = "logoutbtn z-depth-3"> Logout </button>
 		</header>

@@ -9,7 +9,7 @@
 		<title>Medical Database Login</title>
 		<meta charset="UTF-8">
 		<link rel="stylesheet" href="{% static 'personalInfo/main.css' %}">
-		<link rel="stylesheet" href="{% static 'personalInfo/font-awesome.css' %}">
+
 	</head>
 
 	<body>
@@ -20,7 +20,6 @@
 
 		<div class="container z-depth-3">
 			<img src="../../static/personalInfo/man.png"/>
-
 			<form method="post">
 				{% csrf_token %}
 
@@ -37,6 +36,7 @@
 <br>			</div>
 				<input type="submit" value="LOGIN" class="btn-login" />
 			</form>
+
 			<br>
 				<a href="#">Forgot password? </a>
 			</br>
