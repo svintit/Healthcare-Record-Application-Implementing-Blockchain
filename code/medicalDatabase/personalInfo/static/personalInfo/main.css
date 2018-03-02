@@ -17,13 +17,48 @@ body {
 
 .container {
     width: 500px;
-    height: 380px;
+    height: auto;
     text-align: center;
     background-color: rgba(52,73,94,0.7);
     border-radius: 15px;
     margin: 0 auto;
     margin-top: 150px;
 
+}
+
+.textcontainer {
+    font-size: 25px; 
+    margin-left: 20px; 
+    margin-bottom: 20px;
+    height: auto;
+    width: 970px;
+    background-color: #27AE60;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.photocontainer {
+    font-size: 25px; 
+    margin-left: 20px; 
+    margin-bottom: 20px;
+    height: auto;
+    width: 310px;
+    background-color: #27AE60;
+    border-radius: 15px;
+    padding: 10px;
+
+}
+
+.patientcontainer {
+    width: 1010px;
+    height: auto;
+    text-align: left;
+    background-color: #27AE60;
+    border-radius: 15px;
+    margin: 0 auto;
+    margin-top: 10px;
+    color: #fff;
+    border-bottom: 4px solid #27AE60;
 }
 .z-depth-3 {
     -webkit-box-shadow: 0 11px 7px 0 rgba(0,0,0,0.19),0 13px 25px 0 rgba(0,0,0,0.3);
@@ -76,7 +111,7 @@ body {
 }
 
 /* Style the buttons that are used to open the tab content */
-.tab button {
+.tabbutton {
     font-family: sans-serif;
     background-color: inherit;
     border: none;
@@ -89,12 +124,12 @@ body {
 }
 
 /* Change background color of buttons on hover */
-.tab button:hover {
+.tabbutton:hover {
     background-color: #27AE60;
 }
 
 /* Create an active/current tablink class */
-.tab button.active {
+.tabbutton.active {
     background-color: #ccc;
 }
 
@@ -179,7 +214,7 @@ input[type=password] {
 .logoutbtn {
     font-size: 20px;
     margin-right: 20px;
-    margin-top: -18px;
+    margin-top: -55px;
     float: right;
     height: 50px;
     width: 100px;
@@ -239,6 +274,7 @@ h1 {
     width: 500px;
     text-align: center;
     margin: 10px auto;
+    margin-top: 20px;
     border-radius: 25px;
 }
 
