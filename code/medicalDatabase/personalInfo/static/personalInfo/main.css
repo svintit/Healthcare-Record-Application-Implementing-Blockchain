@@ -21,7 +21,7 @@ body {
     text-align: center;
     background-color: rgba(52,73,94,0.7);
     border-radius: 15px;
-    margin: 0 auto;
+    margin-bottom: 10px;
     margin-top: 150px;
 
 }
@@ -32,7 +32,6 @@ body {
     margin-bottom: 20px;
     height: auto;
     width: 970px;
-    background-color: #27AE60;
     border-radius: 15px;
     padding: 10px;
 }
@@ -43,11 +42,13 @@ body {
     margin-bottom: 20px;
     height: auto;
     width: 310px;
-    background-color: #27AE60;
-    border-radius: 15px;
+    background-color: #72cdd4;
+    border-radius: 50%;
     padding: 10px;
 
 }
+
+
 
 .patientcontainer {
     width: 1010px;
@@ -58,7 +59,7 @@ body {
     margin: 0 auto;
     margin-top: 10px;
     color: #fff;
-    border-bottom: 4px solid #27AE60;
+    border-bottom: 4px solid #3bb1c6;
 }
 .z-depth-3 {
     -webkit-box-shadow: 0 11px 7px 0 rgba(0,0,0,0.19),0 13px 25px 0 rgba(0,0,0,0.3);
@@ -66,7 +67,7 @@ body {
 }
 .infoContainer {
     width: 700px;
-    height: 200px;
+    height: 180px;
     text-align: center;
     color: white;
     background-color: rgba(52,73,94,0.7);
@@ -99,6 +100,7 @@ body {
     height: 200px;
     margin-top: -100px;
     margin-bottom: 20px;
+    border-radius: 50%;
 }
 
 /* Style the tab */
@@ -107,7 +109,7 @@ body {
     overflow: hidden;
     background-color: #2ECC71;
     border-radius: 20px;
-    border-bottom: 4px solid #27AE60;
+    border-bottom: 4px solid #72cdd4;
 }
 
 /* Style the buttons that are used to open the tab content */
@@ -193,8 +195,8 @@ input[type=password] {
 .pickbtn {
     margin-top: 50px;
     font-size: 20px;
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-left: 30px;
+    margin-right: 30px;
     height: 80px;
     width: 220px;
     padding: 15px 25px;
@@ -258,7 +260,7 @@ h1 {
     background-color: rgba(52,73,94,0.7);
     border-radius: 15px;
     font-family: sans-serif;
-    font-size: 40px;
+    font-size: 35px;
     color: white;
     width: 500px;
     text-align: center;
@@ -266,8 +268,12 @@ h1 {
     margin-bottom: -30px;
     margin-top: 10px;
     -webkit-box-shadow: 0 11px 7px 0 rgba(0,0,0,0.19),0 13px 25px 0 rgba(0,0,0,0.3);
-  box-shadow: 0 11px 7px 0 rgba(0,0,0,0.19),0 13px 25px 0 rgba(0,0,0,0.3);
+    box-shadow: 0 11px 7px 0 rgba(0,0,0,0.19),0 13px 25px 0 rgba(0,0,0,0.3);
 
+}
+
+h3 {
+    color: #72cdd4;
 }
 
 .footer {

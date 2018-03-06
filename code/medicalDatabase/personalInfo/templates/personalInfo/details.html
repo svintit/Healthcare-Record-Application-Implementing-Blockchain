@@ -15,76 +15,94 @@
 
   		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  		<link rel="icon" type="image/png" href= "../../static/personalInfo/MDIBlogo.png" >
 
 	</head> 
 	<body>
 		<header>
-			<h1 class="center" style="color: #fff; margin-top: 10px;"> {{ userprofile.fullName }}'s Profile </h1>
+			<h1 class="center" style="color: #fff; margin-top: 10px;"> {{ profile.fullName }}'s Profile </h1>
 		</header>
 
 		<button onclick = "location.href = 'http://127.0.0.1:8000/accounts/logout/';" class = "logoutbtn z-depth-3"> Logout </button>
 		<br>
 
-		<div class="patientcontainer z-depth-3" style= "background-color: #2ECC71;">
+		<div class="patientcontainer z-depth-3" style= "background-color: rgba(52,73,94,0.7);">
 			  <ul class="nav nav-tabs">
-			    <li class="active"><a data-toggle="tab" href="#home" style= "color: #227544; font-size: 35px;">General Information</a></li>
-			    <li><a data-toggle="tab" href="#menu1"  style= "color: #227544; font-size: 35px;" >Previous Doctors</a></li>
-			    <li><a data-toggle="tab" href="#menu2"  style= "color: #227544; font-size: 35px;">Ilnesses</a></li>
-			    <li><a data-toggle="tab" href="#menu3"  style= "color: #227544; font-size: 35px;">Medication</a></li>
+			    <li class="active"><a data-toggle="tab" href="#home" style= "color: #72cdd4; font-size: 35px;">General Information</a></li>
+			    <li><a data-toggle="tab" href="#menu1"  style= "color: #72cdd4; font-size: 35px;" >Previous Doctors</a></li>
+			    <li><a data-toggle="tab" href="#menu2"  style= "color: #72cdd4; font-size: 35px;">Ilnesses</a></li>
+			    <li><a data-toggle="tab" href="#menu3"  style= "color: #72cdd4; font-size: 35px;">Medication</a></li>
 			  </ul>
 
 			  <div class="tab-content">
 			    <div id="home" class="tab-pane fade in active">
-			    	<div style = "margin-left: 350px;">
-						<img src="../../static/personalInfo/man.png"/>
+
+			    	<div class="photocontainer" style = "margin-left: 350px; margin-top:20px">
+
+						<img style="border-radius: 50%;" src="../../static/personalInfo/man.png"/>
 					</div>
 
 			    	<div>
 				    	<h3 class="textcontainer">
-					      	Name: {{ userprofile.fullName }} <br>
-							Address: {{ userprofile.address }} <br><br>
-							Gender: {{ userprofile.gender }} <br>
-							Date of Birth: {{ userprofile.dob }} <br>
-							Home Phone Number: {{ userprofile.homePhone }} <br>
-							Personal Phone Number: {{ userprofile.personalPhone }}<br>
+					      	Name: {{ profile.fullName }} <br> <br>
+							Address: {{ profile.address }} <br> <br>
+							Gender: {{ profile.gender }} <br> <br>
+							Date of Birth: {{ profile.dob }} <br> <br>
+							Home Phone Number: {{ profile.homePhone }} <br> <br>
+							Personal Phone Number: {{ profile.personalPhone }}<br>
 						</h3>
 
 					</div>
 
-					<div style = "float: right; margin-top: -240px; margin-right: 30px;">
+					<div style = "float: right; margin-top: -340px; margin-right: 30px;">
 						<h3>
-							Emergency Contact: {{ userprofile.emergencyContact }}<br>
-							Email Address: {{ userprofile.email }} <br>
-							PPSN: {{ userprofile.ppsn }}  <br>
-							marital Status: {{ userprofile.maritalStatus }} <br>
-							Employment Status: {{ userprofile.employment }} <br>
+							Emergency Contact: {{ profile.emergencyContact }}<br> <br>
+							Email Address: {{ profile.email }} <br> <br>
+							PPSN: {{ profile.ppsn }}  <br> <br>
+							Marital Status: {{ profile.maritalStatus }} <br> <br>
+							Employment Status: {{ profile.employment }} <br>
 						</h3>
 					</div>
 			    </div>
 
 			    <div id="menu1" class="tab-pane fade">
-
+			    	<div style="margin-bottom: 80px;">
 			    	<h2 class="photocontainer">
-			    		<img src="../../static/personalInfo/anas.png" height="290"; width="290"/>
+			    		<img style="border-radius: 50%;" src="../../static/personalInfo/anas.png" height="290"; width="290"/>
 			    	</h2>
-
-			    	<h2 class="textcontainer" style="margin-top: -320px; margin-left: 350px; width: 640px;">
+		
+			    	<h2 class="textcontainer" style="margin-top: -280px; margin-left: 350px; width: 640px;">
 			    		Name: {{ userprofile.fullName }} <br> <br>
 			    		Phone Number: {{ userprofile.personalPhone }}<br> <br>
 			    		Email Address: {{ userprofile.email }} <br> <br>
+			    		Last visit: {{ userprofile.last_visit }} <br> <br>
 
 			    	</h2>
+			   		 </div>
 
+			   		 <div>
+			    	<h2 class="photocontainer">
+			    		<img style="border-radius: 50%;" src="../../static/personalInfo/ste.jpg" height="290"; width="290"/>
+			    	</h2>
+		
+			    	<h2 class="textcontainer" style="margin-top: -280px; margin-left: 350px; width: 640px;">
+			    		Name: {{ userprofile.fullName }} <br> <br>
+			    		Phone Number: {{ userprofile.personalPhone }}<br> <br>
+			    		Email Address: {{ userprofile.email }} <br> <br>
+			    		Last visit: {{ userprofile.last_visit }} <br> <br>
 
-			      <h2 type="button"  href= "" class="btn btn-success z-depth-3" style="font-size: 35px; border-radius: 50%; width: 60px; height: 60px; margin: 20px; margin-top: 110px;">+</h2>
+			    	</h2>
+			   		 </div>
+
+			      <h2 type="button"  href= "" class="btn btn-success z-depth-3" style="font-size: 35px; border-radius: 50%; width: 60px; height: 60px; margin: 20px;">+</h2>
 			    </div>
 			    <div id="menu2" class="tab-pane fade">
 			      <h3 class="textcontainer" style="font-size: 30px;">
 			      	List of known Ilnesses/Conditions:
 			      </h3>
 			       <h3 class="textcontainer" style="font-size: 30px;">
-			      	{{ userprofile.conditions }}
-			      	....
+			      	{{ profile.conditions }}
+			      	
 			      </h3>
 			    </div>
 			    <div id="menu3" class="tab-pane fade">
@@ -92,7 +110,7 @@
 			      	List of medication prescribed to patient:
 			      </h3>
 			       <h3 class="textcontainer" style="font-size: 30px;">
-			      	{{ userprofile.medication }}
+			      	{{ profile.medication }}
 			      	....
 			      </h3>
 			    </div>

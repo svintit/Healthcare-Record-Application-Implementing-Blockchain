@@ -1,7 +1,7 @@
 from djongo import models
 from djongo.models import forms
 
-class GeneralInfo(models.Model):
+class UserProfile(models.Model):
 	fullName = models.CharField(max_length = 250)
 	address = models.CharField(max_length = 250)
 	gender = models.CharField(max_length = 250)

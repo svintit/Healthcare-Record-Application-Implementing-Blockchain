@@ -8,5 +8,5 @@ app_name = 'personalInfo'
 
 urlpatterns = [
 	url(r'^$', views.index, name='index'),
-	url(r'^details/$', views.patientDetails, name='patientDetails'),
+	url(r'^details/$', views.userprofile, name='patient'),
 ]
