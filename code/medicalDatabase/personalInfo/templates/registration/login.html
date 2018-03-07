@@ -9,19 +9,16 @@
 		<title>Medical Database Login</title>
 		<meta charset="UTF-8">
 		<link rel="stylesheet" href="{% static 'personalInfo/main.css' %}">
-
 		<link rel="icon" type="image/png" href= "../../static/personalInfo/MDIBlogo.png" >
-
 	</head>
 
 	<body>
-
 		<header>
 			<h1 style="font-size: 20px"> Medical Database Implementing Blockchain <img style="height: 70px; width: 70px;" src="../../static/personalInfo/MDIBlogo.png"/> </h1>
 		</header>
 
 		<div class="container z-depth-3">
-				<img src="../../static/personalInfo/man.png"/>
+			<img src="../../static/personalInfo/man.png"/>
 
 			<form role="form" method="post" action=""{% url 'login' %}?next={{request.path}}">
 				{% csrf_token %}
@@ -31,19 +28,15 @@
 				<br>
 				<input type="submit" value="Login" class="btn-login" />
 			</form>
+
 			<br>
-				<a href="#">Forgot password? </a>
-			</br>
+			<a href="#">Forgot password? </a>
 		</div>
 
 		<footer>
-		<div class ="footer  z-depth-3">
-			<p> Created by Traian Svinti and David Talan</p>
-		</div>
+			<div class ="footer  z-depth-3">
+				<p> Created by Traian Svinti and David Talan</p>
+			</div>
 		</footer>
-
-		<script src="script.js"></script>
 	</body>
-
-
 </html>
