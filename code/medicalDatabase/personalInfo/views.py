@@ -2,8 +2,6 @@ from django.shortcuts import render, get_object_or_404
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth import logout
 from django.template.response import TemplateResponse
-from django.contrib.admin.views.decorators import staff_member_required
-from django.http import HttpResponseRedirect
 from .models import UserProfile
 
 def index(request): 
@@ -18,4 +16,4 @@ def patientLogout(request):
 @login_required(login_url="http://127.0.0.1:8000/accounts/login/")
 def userprofile(request):
 	profile = request.user.userprofile
-	return TemplateResponse(request, 'personalInfo/details.html', {"profile": profile})
+	return TemplateResponse(request, 'personalInfo/details.html', {"profile": profile}) 
