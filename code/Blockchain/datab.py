@@ -10,8 +10,8 @@ b = BigchainDB(bdb_root_url)
 #generate the keys from generateKey.py
 #should only run once
 
-user_priv_key = '4RSxfxSAmEVXtvBL125nBQcVRz5iSNShPSxYJKUnr9jp'
-user_pub_key = 'A2uZHQkG32SSR6Ssh31sbMLnTAkWk93EmKnJHiqJVogM'
+user_priv_key = 'BSCuLz8f65KGtz3dAxLRG9CP3cagpmpCJJDmC3rqxDfX'
+user_pub_key = '138dsEMVq1RYABi9K2BunGsEgbgyaA86FjC3XTYBdSZd'
 
 #example of a record
 digital_asset_payload = {
@@ -82,7 +82,7 @@ transfer_input = {
 
 }
 
-doc_pub_key = '3MVHS3JAUdg1EEpf8RAetx5s9d14orGrQpaDDR45BRUr'
+doc_pub_key = 'B3zL5ch5qi68XwMGC94GPGPv9P8WdXF9GZGt4xdHwcyS'
 
 prepared_transfer = b.transactions.prepare(
     operation = 'TRANSFER',

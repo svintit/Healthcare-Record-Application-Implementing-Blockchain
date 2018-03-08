@@ -64,27 +64,27 @@
 			    <div id="menu1" class="tab-pane fade">
 			    	<div style="margin-bottom: 80px;">
 				    	<h2 class="photocontainer">
-				    		<img style="border-radius: 50%;" src="../../static/personalInfo/anas.png" height="290"; width="290"/>
+				    		<img style="border-radius: 50%;" src="../../static/personalInfo/doctor.png" height="290"; width="290"/>
 				    	</h2>
 			
 				    	<h2 class="textcontainer" style="margin-top: -280px; margin-left: 350px; width: 640px;">
-				    		Name: {{ userprofile.fullName }} <br> <br>
-				    		Phone Number: {{ userprofile.personalPhone }}<br> <br>
-				    		Email Address: {{ userprofile.email }} <br> <br>
-				    		Last visit: {{ userprofile.last_visit }} <br> <br>
+				    		Name: {{ profile.curr_doc_name }} <br> <br>
+				    		Phone Number: {{ profile.curr_doc_num }}<br> <br>
+				    		Email Address: {{ profile.curr_doc_email }} <br> <br>
+				    		Last visit: {{ profile.curr_last_visit }} <br> <br>
 				    	</h2>
 			   		</div>
 
 			   		<div>
 				    	<h2 class="photocontainer">
-				    		<img style="border-radius: 50%;" src="../../static/personalInfo/ste.jpg" height="290"; width="290"/>
+				    		<img style="border-radius: 50%;" src="../../static/personalInfo/doctor.png" height="290"; width="290"/>
 				    	</h2>
 			
 				    	<h2 class="textcontainer" style="margin-top: -280px; margin-left: 350px; width: 640px;">
-				    		Name: {{ userprofile.fullName }} <br> <br>
-				    		Phone Number: {{ userprofile.personalPhone }}<br> <br>
-				    		Email Address: {{ userprofile.email }} <br> <br>
-				    		Last visit: {{ userprofile.last_visit }} <br> <br>
+				    		Name: {{ profile.prev_doc_name }} <br> <br>
+				    		Phone Number: {{ profile.prev_doc_num }}<br> <br>
+				    		Email Address: {{ profile.prev_doc_email }} <br> <br>
+				    		Last visit: {{ profile.prev_last_visit }} <br> <br>
 				    	</h2>
 			   		</div>
 
@@ -95,8 +95,8 @@
 			    	<h3 class="textcontainer" style="font-size: 30px;">
 			      		List of known Ilnesses/Conditions:
 			      	</h3>
-			       	<h3 class="textcontainer" style="font-size: 30px;">
-			      		{{ profile.conditions }}
+			       	<h3 class="textcontainer" style="font-size: 50px;">
+			      		{{ profile.illnesses }}
 			      	</h3>
 			    </div>
 
@@ -104,9 +104,8 @@
 			    	<h3 class="textcontainer" style="font-size: 30px;">
 			      		List of medication prescribed to patient:
 			      	</h3>
-			       	<h3 class="textcontainer" style="font-size: 30px;">
-			      		{{ profile.medication }}
-			      		....
+			       	<h3 class="textcontainer" style="font-size: 50px;">
+			      		{{ profile.medicine }}
 			      	</h3>
 			    </div>
 			</div>

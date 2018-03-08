@@ -4,6 +4,7 @@ from djongo.models import forms
 from django.contrib.auth.models import User
 
 class UserProfile(models.Model):
+	#General Information
 	user = models.OneToOneField(User, on_delete=models.CASCADE)
 	fullName = models.CharField(max_length = 250, default='', blank=True)
 	address = models.CharField(max_length = 250, default='', blank=True)
@@ -21,8 +22,24 @@ class UserProfile(models.Model):
 	#	upload_to=upload_to("main.UserProfile.Photo", "profiles"),
 	#	format="Image", max_length=255, null=True, blank=True)
 
-	def __str__(self):
-		return self.fullName + ' - ' + self.ppsn
+	#Current Doctor
+	curr_doc_name = models.CharField(max_length = 250, default='', blank=True)
+	curr_doc_num = models.CharField(max_length = 250, default='', blank=True)
+	curr_doc_email = models.CharField(max_length = 250, default='', blank=True)
+	curr_last_visit = models.DateField(blank=True)
+
+	#Previous Doctor
+	prev_doc_name = models.CharField(max_length = 250, default='', blank=True)
+	prev_doc_num = models.CharField(max_length = 250, default='', blank=True)
+	prev_doc_email = models.CharField(max_length = 250, default='', blank=True)
+	prev_last_visit = models.DateField(blank=True)
+
+	#Illnesses
+	illnesses = models.CharField(max_length = 1000, default='', blank=True)
+
+	#Medication
+	medicine = models.CharField(max_length = 1000, default='', blank=True)
+
 
 def create_profile(sender, **kwargs):
     user = kwargs["instance"]
