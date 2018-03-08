@@ -2,6 +2,7 @@ from djongo import models
 from djongo.models import forms
 
 class UserProfile(models.Model):
+	#General Information
 	fullName = models.CharField(max_length = 250)
 	address = models.CharField(max_length = 250)
 	gender = models.CharField(max_length = 250)
@@ -15,5 +16,3 @@ class UserProfile(models.Model):
 	employment = models.CharField(max_length = 250)
 	personalPic = models.CharField(max_length = 1000)
 
-	def __str__(self):
-		return self.fullName + ' - ' + self.dob

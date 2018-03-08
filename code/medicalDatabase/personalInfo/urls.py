@@ -9,4 +9,5 @@ app_name = 'personalInfo'
 urlpatterns = [
 	url(r'^$', views.index, name='index'),
 	url(r'^details/$', views.userprofile, name='patient'),
+	url(r'^details/json/$', views.get_modelAPI, name='json'),
 ]
