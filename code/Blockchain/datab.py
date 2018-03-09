@@ -17,8 +17,7 @@ user_pub_key = '138dsEMVq1RYABi9K2BunGsEgbgyaA86FjC3XTYBdSZd'
 digital_asset_payload = {
     'data': {
         'record': {
-            'test':'hello djongo',
-            'is it working':'maybe'
+            'test':'hello assessors',
         }
     },
 }
