@@ -27,8 +27,8 @@ body {
 }
 
 .textcontainer {
-    font-size: 25px; 
-    margin-left: 20px; 
+    font-size: 25px;
+    margin-left: 20px;
     margin-bottom: 20px;
     height: auto;
     width: 970px;
@@ -37,8 +37,8 @@ body {
 }
 
 .photocontainer {
-    font-size: 25px; 
-    margin-left: 20px; 
+    font-size: 25px;
+    margin-left: 20px;
     margin-bottom: 20px;
     height: auto;
     width: 310px;
@@ -49,7 +49,7 @@ body {
 }
 
 .patientcontainer {
-    width: 1010px;
+    width: 1108px;
     height: auto;
     text-align: left;
     background-color: rgba(52,73,94,0.7);
@@ -138,12 +138,13 @@ input[type=text] {
 }
 
 input[type=password] {
-  border-radius: 35px;
-  margin: 5px;
-  text-align: center;
-  font-family: sans-serif;
-  background-color: rgba(0, 0, 0, 0.5);
-  border-width: 0px;
+   border-radius: 35px;
+   margin: 5px;
+   text-align: center;
+   font-family: sans-serif;
+   color: white;
+   background-color: rgba(0, 0, 0, 0.5);
+   border-width: 0px;
 }
 
 .pickbtn {
@@ -205,7 +206,7 @@ p {
 
 .center {
     margin: auto;
-    width: 50%;
+    width: 73%;
     padding: 10px;
 }
 

@@ -1,6 +1,5 @@
 from djongo import models
 from django.db.models.signals import post_save
-from djongo.models import forms
 from django.contrib.auth.models import User
 
 class UserProfile(models.Model):
@@ -18,7 +17,7 @@ class UserProfile(models.Model):
 	maritalStatus = models.CharField(max_length = 250, default='', blank=True)
 	employment = models.BooleanField(blank=True)
 	personalPic = models.CharField(max_length = 250, default='', blank=True)
-	#personalPic = FileField(verbose_name=_("Patient Picture"), 
+	#personalPic = FileField(verbose_name=_("Patient Picture"),
 	#	upload_to=upload_to("main.UserProfile.Photo", "profiles"),
 	#	format="Image", max_length=255, null=True, blank=True)
 

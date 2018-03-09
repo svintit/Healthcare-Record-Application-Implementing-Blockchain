@@ -14,7 +14,8 @@
 
 	<body>
 		<header>
-			<h1 style="font-size: 20px"> Medical Database Implementing Blockchain <img style="height: 70px; width: 70px;" src="../../static/personalInfo/MDIBlogo.png"/> </h1>
+			<img style="height: 70px; width: 70px; margin-top:10px; margin-left:10px;" src="../../static/personalInfo/MDIBlogo.png"/>
+			<h1 style="font-size: 35px; margin-top: -70px;"> Medical Database Login</h1>
 		</header>
 
 		<div class="container z-depth-3">
@@ -24,7 +25,7 @@
 				{% csrf_token %}
 				<input type="text" name="username" placeholder="Username" id="{{ field.id_for_label }}" value="{{ field.value }}">
 				<br>
-				<input type="password" name="password" placeholder="Password" id="{{ field.id_for_label }}" value="{{ field.value }}">	
+				<input type="password" name="password" placeholder="Password" id="{{ field.id_for_label }}" value="{{ field.value }}">
 				<br>
 				<input type="submit" value="Login" class="btn-login" />
 			</form>

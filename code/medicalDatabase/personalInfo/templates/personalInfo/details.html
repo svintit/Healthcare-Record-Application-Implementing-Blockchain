@@ -15,10 +15,11 @@
   		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   		<link rel="icon" type="image/png" href= "../../static/personalInfo/MDIBlogo.png" >
-	</head> 
+	</head>
 	<body>
 		<header>
-			<h1 class="center" style="color: #fff; margin-top: 10px;"> {{ profile.fullName }}'s Profile </h1>
+			<img style="height: 70px; width: 70px; margin-top:10px; margin-left:10px;" src="../../static/personalInfo/MDIBlogo.png"/>
+			<h1 class="center" style="color: #fff; margin-top: -70px;"> {{ profile.fullName }}'s Profile </h1>
 		</header>
 
 		<button onclick = "location.href = 'http://127.0.0.1:8000/accounts/logout/';" class = "logoutbtn z-depth-3"> Logout </button>
@@ -35,7 +36,7 @@
 			<div class="tab-content">
 			    <div id="home" class="tab-pane fade in active">
 
-			    	<div class="photocontainer" style = "margin-left: 350px; margin-top:20px">
+			    	<div class="photocontainer" style = "margin-left: 420px; margin-top:20px">
 						<img style="border-radius: 50%;" src="../../static/personalInfo/man.png"/>
 					</div>
 
@@ -66,7 +67,7 @@
 				    	<h2 class="photocontainer">
 				    		<img style="border-radius: 50%;" src="../../static/personalInfo/doctor.png" height="290"; width="290"/>
 				    	</h2>
-			
+
 				    	<h2 class="textcontainer" style="margin-top: -280px; margin-left: 350px; width: 640px;">
 				    		Name: {{ profile.curr_doc_name }} <br> <br>
 				    		Phone Number: {{ profile.curr_doc_num }}<br> <br>
@@ -79,7 +80,7 @@
 				    	<h2 class="photocontainer">
 				    		<img style="border-radius: 50%;" src="../../static/personalInfo/doctor.png" height="290"; width="290"/>
 				    	</h2>
-			
+
 				    	<h2 class="textcontainer" style="margin-top: -280px; margin-left: 350px; width: 640px;">
 				    		Name: {{ profile.prev_doc_name }} <br> <br>
 				    		Phone Number: {{ profile.prev_doc_num }}<br> <br>
